@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raqamlashtirish, Faktcheking va Tarmoq Xavfsizligi Testi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .question p {
+            font-weight: bold;
+            color: #34495e;
+        }
+        label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        label:hover {
+            background-color: #f0f4f8;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #result {
+            margin-top: 25px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bilimingizni Sinang</h1>
+    <p style="text-align: center; color: #7f8c8d;">Raqamlashtirish, Faktcheking va Tarmoq xavfsizligi mavzularida test</p>
+    
+    <form id="quizForm">
+        <!-- 1 -->
+        <div class="question" data-correct="b">
+            <p>1. Raqamlashtirish deganda nima tushuniladi?</p>
+            <label><input type="radio" name="q1" value="a"> A) Qog'oz hujjatlarni to'liq yo'q qilish</label>
+            <label><input type="radio" name="q1" value="b"> B) Jarayonlar va xizmatlarni raqamli texnologiyalar yordamida optimallashtirish va avtomatlashtirish</label>
+            <label><input type="radio" name="q1" value="c"> C) Faqat internetda o'yin o'ynash</label>
+            <label><input type="radio" name="q1" value="d"> D) Kompyuter sotib olish</label>
+        </div>
+
+        <!-- 2 -->
+        <div class="question" data-correct="a">
+            <p>2. Elektron hukumat (e-Hukumat) tizimining asosiy afzalligi nimada?</p>
+            <label><input type="radio" name="q2" value="a"> A) Davlat xizmatlarini tez, shaffof va masofadan turib olish imkoniyati</label>
+            <label><input type="radio" name="q2" value="b"> B) Faqat davlat xizmatchilari uchun ish joyini yaratish</label>
+            <label><input type="radio" name="q2" value="c"> C) Qog'oz xarajatlarini keskin oshirish</label>
+            <label><input type="radio" name="q2" value="d"> D) Internet tezligini sekinlashtirish</label>
+        </div>
+
+        <!-- 3 -->
+        <div class="question" data-correct="b">
+            <p>3. Faktcheking (Fact-checking) nima?</p>
+            <label><input type="radio" name="q3" value="a"> A) Yangi internet o'yinlarini yaratish</label>
+            <label><input type="radio" name="q3" value="b"> B) Axborot, maqola yoki ma'lumotlarning to'g'riligi va haqiqiyligini tekshirish</label>
+            <label><input type="radio" name="q3" value="c"> C) Parollarni buzib kirish</label>
+            <label><input type="radio" name="q3" value="d"> D) Videolarni montaj qilish va efirga uzatish</label>
+        </div>
+
+        <!-- 4 -->
+        <div class="question" data-correct="a">
+            <p>4. "Deepfake" texnologiyasi nima?</p>
+            <label><input type="radio" name="q4" value="a"> A) Sun'iy intellekt yordamida yaratilgan soxta, lekin juda ishonchli ko'rinadigan video va ovozlar</label>
+            <label><input type="radio" name="q4" value="b"> B) Rasmlarga rangli filtr qo'shish dasturi</label>
+            <label><input type="radio" name="q4" value="c"> C) Antivirus turi</label>
+            <label><input type="radio" name="q4" value="d"> D) Internet tezligini o'lchovchi maxsus qurilma</label>
+        </div>
+
+        <!-- 5 -->
+        <div class="question" data-correct="c">
+            <p>5. Internetda shubhali xabar yoki rasm tarqalganda nima qilish kerak emas?</p>
+            <label><input type="radio" name="q5" value="a"> A) Manbani tekshirish</label>
+            <label><input type="radio" name="q5" value="b"> B) Boshqa ishonchli OAV bilan solishtirish</label>
+            <label><input type="radio" name="q5" value="c"> C) Uni hech qanday tekshiruvsiz darhol barcha guruhlarga ulashish</label>
+            <label><input type="radio" name="q5" value="d"> D) Rasmiy manbalardan izlash</label>
+        </div>
+
+        <!-- 6 -->
+        <div class="question" data-correct="b">
+            <p>6. Tarmoq xavfsizligida "Fishing" (Phishing) hujumi deganda nima tushuniladi?</p>
+            <label><input type="radio" name="q6" value="a"> A) Baliq ovlash musobaqasi</label>
+            <label><input type="radio" name="q6" value="b"> B) Soxta havolalar yoki sahifalar orqali foydalanuvchining shaxsiy ma'lumotlarini o'g'irlash</label>
+            <label><input type="radio" name="q6" value="c"> C) Kompyuterni virusdan tozalash jarayoni</label>
+            <label><input type="radio" name="q6" value="d"> D) Wi-Fi signalini kuchaytirish usuli</label>
+        </div>
+
+        <!-- 7 -->
+        <div class="question" data-correct="c">
+            <p>7. Kuchli parol qanday tuzilgan bo'lishi kerak?</p>
+            <label><input type="radio" name="q7" value="a"> A) Faqat tug'ilgan yil va oy</label>
+            <label><input type="radio" name="q7" value="b"> B) Faqat ism va familiya</label>
+            <label><input type="radio" name="q7" value="c"> C) Katta va kichik harflar, raqamlar hamda maxsus belgilardan iborat bo'lishi kerak</label>
+            <label><input type="radio" name="q7" value="d"> D) "12345678" kabi oson ketma-ketlikda</label>
+        </div>
+
+        <!-- 8 -->
+        <div class="question" data-correct="b">
+            <p>8. Ikki bosqichli autentifikatsiya (2FA) nima uchun xizmat qiladi?</p>
+            <label><input type="radio" name="q8" value="a"> A) Kompyuterning ishlash tezligini oshirish uchun</label>
+            <label><input type="radio" name="q8" value="b"> B) Akkauntga kirishda parolga qo'shimcha ravishda SMS yoki kod orqali xavfsizlikni ta'minlash uchun</label>
+            <label><input type="radio" name="q8" value="c"> C) Internet trafigini tejash uchun</label>
+            <label><input type="radio" name="q8" value="d"> D) Ekran yorug'ligini avtomatik sozlash uchun</label>
+        </div>
+
+        <!-- 9 -->
+        <div class="question" data-correct="a">
+            <p>9. VPN (Virtual Private Network) xizmatining asosiy vazifasi nima?</p>
+            <label><input type="radio" name="q9" value="a"> A) Internet trafigini shifrlash va tarmoqda maxfiylikni/xavfsizlikni ta'minlash</label>
+            <label><input type="radio" name="q9" value="b"> C) Kompyuterdagi ortiqcha fayllarni o'chirish</label>
+            <label><input type="radio" name="q9" value="c"> C) O'yinlardagi grafiklarni yaxshilash</label>
+            <label><input type="radio" name="q9" value="d"> D) Telefon batareyasini uzoqroq saqlash</label>
+        </div>
+
+        <!-- 10 -->
+        <div class="question" data-correct="a">
+            <p>10. Ommaviy (public) Wi-Fi tarmoqlaridan foydalanganda nima qilish tavsiya etilmaydi?</p>
+            <label><input type="radio" name="q10" value="a"> A) Shaxsiy va bank akkauntlariga kirish, maxfiy ma'lumotlarni kiritish</label>
+            <label><input type="radio" name="q10" value="b"> B) Yangiliklarni o'qish</label>
+            <label><input type="radio" name="q10" value="c"> C) Ob-havo ma'lumotlarini ko'rish</label>
+            <label><input type="radio" name="q10" value="d"> D) Ochiq ta'lim saytlarini ko'zdan kechirish</label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Natijani tekshirish</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    function checkAnswers() {
+        const questions = document.querySelectorAll('.question');
+        let score = 0;
+
+        questions.forEach((q, index) => {
+            const correctAnswer = q.getAttribute('data-correct');
+            const selected = q.querySelector(`input[name="q${index + 1}"]:checked`);
+            
+            // Oldingi ranglarni tozalash
+            q.style.backgroundColor = "transparent";
+
+            if (selected) {
+                if (selected.value === correctAnswer) {
+                    score++;
+                    q.style.backgroundColor = "#e8f8f5"; // To'g'ri javob uchun och yashil
+                } else {
+                    q.style.backgroundColor = "#fdebd0"; // Noto'g'ri javob uchun och sariq/qizg'ish
+                }
+            } else {
+                q.style.backgroundColor = "#fdebd0";
+            }
+        });
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `Sizning natijangiz: 10 tadan ${score} ta to'g'ri (${score * 10}%)`;
+        
+        if (score === 10) {
+            resultDiv.style.color = "green";
+            resultDiv.innerHTML += "<br>Ajoyib! Barcha savollarga to'g'ri javob berdingiz!";
+        } else if (score >= 6) {
+            resultDiv.style.color = "#27ae60";
+            resultDiv.innerHTML += "<br>Yaxshi natija!";
+        } else {
+            resultDiv.style.color = "#c0392b";
+            resultDiv.innerHTML += "<br>Qayta urinib ko'rishingiz mumkin.";
+        }
+    }
+</script>
+
+</body>
+</html>
